@@ -6,9 +6,10 @@ This project demonstrates Quantum Machine Learning (QML) using Variational Quant
 
 We use two datasets:
 * Credit Card Fraud Detection – 8-feature dataset for financial fraud classification.
-* Breast Cancer Wisconsin Dataset – 30-feature dataset for cancer detection.
+* Breast Cancer Wisconsin Dataset (scikit-learn) – standard medical diagnosis dataset with 30 numerical features
 
 The goal is to evaluate the performance of quantum classifiers in terms of accuracy, AUC-ROC, confusion matrix, and classification reports, and benchmark against classical models like Logistic Regression, Random Forest, and SVM.
+The objective is not to claim quantum advantage, but to systematically evaluate how VQC models perform under ideal and noisy quantum simulations, and compare them with classical baselines using consistent evaluation metrics.
 
 ## Project Motivation
 
@@ -97,5 +98,6 @@ pip install numpy pandas matplotlib scikit-learn qiskit qiskit-aer qiskit-machin
 ## References
 
 * Qiskit Machine Learning Documentation
-* Schuld, M. et al., “Supervised Learning with Quantum Computers”, Quantum Machine Learning Review, 2019.
-* Kaggle Datasets: Credit Card Fraud & Breast Cancer Wisconsin
+* Schuld, M. et al., Supervised Learning with Quantum Computers, 2019
+* scikit-learn Breast Cancer Wisconsin Dataset
+* Kaggle Credit Card Fraud Dataset
