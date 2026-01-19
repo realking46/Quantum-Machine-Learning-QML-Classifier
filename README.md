@@ -19,7 +19,8 @@ The objective is not to claim quantum advantage, but to systematically evaluate 
 * Explore hybrid quantum-classical architectures combining quantum circuits with classical post-processing.
 
 ## Key Steps in the Notebook
-1. Data Preprocessing
+
+### 1. Data Preprocessing
 
 * Load Dataset: Read CSV files using pandas.
 * Separate Features and Target: Target column is fraud (or diagnosis for breast cancer).
@@ -28,7 +29,7 @@ The objective is not to claim quantum advantage, but to systematically evaluate 
 * Combine Features: Final X_reduced is quantum-friendly.
 * Train-Test Split: Split dataset into training and testing sets (80/20).
 
-2. Classical Baseline Models
+### 2. Classical Baseline Models
 
 * Logistic Regression
 * Random Forest Classifier
@@ -40,7 +41,7 @@ Steps:
 * Predict probabilities and labels on X_test.
 * Compute AUC-ROC, Accuracy, and store probabilities for ROC curve comparisons.
 
-3. Variational Quantum Classifier (VQC)
+### 3. Variational Quantum Classifier (VQC)
 
 * Feature Map: ZZFeatureMap encodes classical data into quantum states.
 * Ansatz: RealAmplitudes – parameterized circuit with rotation and entanglement layers.
@@ -51,14 +52,14 @@ Steps:
 Fit VQC on X_train and y_train.
 Predict probabilities and labels on X_test.
 
-4. Noisy VQC Simulation
+### 4. Noisy VQC Simulation
 
 * Use AerSimulator and SamplerV2 to simulate realistic noisy quantum hardware.
 * Apply a PassManager to optimize and transpile circuits for the simulator.
 * Fit VQC on a smaller subset of data (for speed).
 * Evaluate predictions on X_test.
 
-5. Evaluation Metrics
+### 5. Evaluation Metrics
 
 For all models:
 
@@ -68,13 +69,13 @@ For all models:
 * Classification Report – Precision, recall, f1-score for each class.
 * ROC Curve – Compare all models visually.
 
-6. Visualization
+### 6. Visualization
 
 * Bar plots for benchmarking metrics across classical and quantum models.
 * Confusion matrices for VQC Ideal and VQC Noisy.
 * ROC curves for all models to visualize prediction quality.
 
-7. Observations:
+### 7. Observations:
 
 * Classical models still outperform the small VQC due to dataset size and low qubit count.
 * Noisy VQC demonstrates robustness in prediction despite noise.
