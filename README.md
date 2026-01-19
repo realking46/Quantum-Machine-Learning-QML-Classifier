@@ -82,8 +82,9 @@ For all models:
 * Quantum classifiers are trainable and evaluatable on standard datasets using simulators.
 
 ## Requirements
+```
 pip install numpy pandas matplotlib scikit-learn qiskit qiskit-aer qiskit-machine-learning qiskit-ibm-runtime pylatexenc
-
+```
 ## How to Run
 
 * Clone the repository.
