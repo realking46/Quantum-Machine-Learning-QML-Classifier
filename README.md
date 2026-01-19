@@ -91,11 +91,8 @@ pip install numpy pandas matplotlib scikit-learn qiskit qiskit-aer qiskit-machin
 * Open the Jupyter notebook (.ipynb).
 * Run each cell sequentially.
 * Ensure datasets are in the same folder as the notebook.
-
 * The notebook visualizes quantum circuits for feature map and ansatz using mpl and text.
 * Noisy simulations are included for NISQ-style benchmarking.
-
-* Can be extended to any binary classification dataset.
 
 ## References
 
